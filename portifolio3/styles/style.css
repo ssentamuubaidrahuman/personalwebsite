@@ -1,0 +1,289 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #4d391c; /* Mixed - 100 */
+    color: #3cca43; /* Light text */
+}
+
+nav {
+    background-color: #fa62ff; /* Mixed - 200 */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(194, 153, 18, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #5effa7; /* Mixed - 300 */
+    border-radius: 5px;
+}
+
+/* Home Section */
+.home {
+    position: relative;
+    text-align: center;
+    color: #2c6920;
+}
+
+.home .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home-content {
+    position: relative;
+    padding: 100px 20px;
+}
+
+.home-content h1 {
+    font-size: 6em;
+    font-family :'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.about .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Two columns */
+    gap: 20px;
+}
+
+.card {
+    background-color: #8565de; /* Mixed - 200 */
+    border-radius: 10px;
+    box-shadow:  8px 8px rgb(164, 54, 255);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height:px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.card h3 {
+    font-size: 2.8em;
+    margin: 15px 0;
+    color: #1a26a3;
+}
+
+.card p {
+    flex-grow: 1;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2cb459;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(12, 255, 247);
+}
+
+/* Read More Button */
+.read-more {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #12083a; /* Primary - 300 */
+    color: #1c6612;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.read-more:hover {
+    background-color: #ff0055; /* Primary - 400 */
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.services .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #5c45b7; /* Mixed - 200 */
+}
+
+/* My Works Section */
+.works {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.works h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    
+}
+
+.works .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.works .card {
+    background-color: #8565de; /* Mixed - 200 */
+}
+
+.hire-me {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #7a5af5; /* Primary - 300 */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.hire-me:hover {
+    background-color: #9171f8; /* Primary - 400 */
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.contact .card {
+    background-color: #8565de; /* Mixed - 200 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 800px; /* Wider card */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact form input[type="tel"],
+.contact form input[type="email"],
+.contact form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #0b041a; /* Mixed - 400 */
+    font-size: 14px;
+    background-color: #51ffb7; /* Mixed - 300 */
+    color: #000000;
+    width: 100%;
+}
+
+.contact form input[type="submit"] {
+    background-color: #1c0d5b; /* Primary - 300 */
+    color: #973be7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.contact form input[type="submit"]:hover {
+    background-color: #9171f8; /* Primary - 400 */
+}
+
+/* Footer */
+footer {
+    background-color: #482c95; /* Mixed - 200 */
+    padding: 20px;
+    text-align: center;
+    color: #e0e0e0;
+    position: relative;
+}
+
+footer a {
+    color: #9f66f9; /* Primary - 300 */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #9171f8; /* Primary - 400 */
+}
